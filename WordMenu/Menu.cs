@@ -38,11 +38,11 @@ public class Menu
     public string ChangeWord(string text)
     {
         string result = "";
-        for (int i = text.Length; i < 1; i++)
+        for (int i = text.Length; i > 1; i++)
         {
-           // if ()
+            if (text == result)
            {
-                
+            result += text[0];    
            }
            return result;
         }
