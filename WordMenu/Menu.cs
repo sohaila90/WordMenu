@@ -10,12 +10,12 @@ public class Menu
     switch (choice)
     {
         case "1":
-            Console.WriteLine("Skriv inn et ord");
+            Console.WriteLine("Enter a word");
             string input2 = Console.ReadLine();
             Console.WriteLine(RotateText(input2));
         break;
         case "2":
-            Console.WriteLine("Skriv inn et ord som inneholder a for å bytte til bokstav e");
+            Console.WriteLine("Type a word containing a to change to letter e");
             string input3 = Console.ReadLine();
             Console.WriteLine(ChangeWord(input3));
             break;
@@ -40,11 +40,11 @@ public class Menu
         string result = "";
         for (int i = text.Length; i > 1; i++)
         {
-            if (text == result)
-           {
-            result += text[0];    
-           }
-           return result;
+            if (text == result) 
+            { 
+                result += text[0]; 
+            } 
+            return result;
         }
         return result;
     }
